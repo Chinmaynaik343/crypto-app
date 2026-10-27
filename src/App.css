@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+.app {
+  width: 95%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #172554;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+thead {
+  background: #172554;
+  color: white;
+}
+
+th,
+td {
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.coin-image {
+  width: 28px;
+  height: 28px;
+}
+
+.symbol {
+  color: #777;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.positive {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.negative {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.message {
+  text-align: center;
+  padding: 30px;
+}
+
+.error {
+  color: #dc2626;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    width: 96%;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+}
